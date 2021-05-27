@@ -1,0 +1,98 @@
+body {
+background-image:url(Lighthouse.jpg);
+background-size:cover;
+}
+
+form {		/*this form includes the fieldset tag along with legend tag*/
+position:absolute;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+}
+ 
+fieldset {		/*the fieldset surrounds the form with rectangular shape*/
+	width:250px;
+	border:none;
+	OVERFLOW:HIDDEN; /*WHAT IS THIS?*/			
+}
+
+form:hover fieldset {
+	border: 2px solid #f5a023;
+	 transition:all 1s ease-in-out; /*animation for the hover*/
+}
+
+form:hover legend{
+	box-shadow:1px 13px 10px 4px #657993, 1px 13px 10px 4px #e6d2ab inset;
+	transition:all 1s ease-in-out;
+}
+
+legend {		/*the legend tag responsible for including the text or the image as a title for the fieldset*/
+text-align:center;
+border-radius:50%;
+}
+
+
+img {
+	width:70px;
+	height:70px;
+	border-radius:35px;
+}
+
+h2{		/*this header 2 for 'Sign in'*/
+text-align:center;
+text-size:25px;
+color:blue;
+}
+
+a {		/* a href carrying the hyperlink for the element content
+		i.e. under the 'Forgot password?' and 
+		we need get rid of it using text-decoration*/
+
+text-decoration:none;
+}
+
+h3{
+text-align:center;
+}
+
+.login{ 		/*class for login section named also login and you call it by dot*/
+border:none;		
+border-radius:10px;
+width:100%;
+background: #e6d2ab;
+margin:10px auto;
+padding:5px;
+}
+
+
+div input {		/*this means every input inside div block*/
+border:none;
+outline:none;
+margin-bottom:20px;
+font-size:20px;
+padding-left:20px;
+background:transparent;
+BOX-SIZING:BORDER-BOX;  /*WHAT THIS ONE DO?*/
+}
+
+div span{		/*this means every span tag inside div block*/
+POSITION:RELATIVE;	/*WHAT THIS ONE DO?*/
+top:20px;
+}
+
+.username:focus {    	/*focus is when you left-click on the content of element e.g. username*/
+border-bottom:2px solid #f5a023;
+}
+
+.password:focus{
+border-bottom:2px solid #f5a023;
+}
+
+.login:hover{
+background:#f5a023;
+}
+
+i:hover{
+box-shadow:1px 13px 10px 4px #824915;
+transition:all 1s ease-in-out; 
+}
